@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body style=" height: 970px ;background-image: url('https://wallpaperaccess.com/full/1294266.png'); background-size: cover; ">
+
+    <nav class="navbar navbar-light bg-secondary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">HOME</span>
+            <!-- <h3 class="text-center">background-image: url('https://wallpaperaccess.com/full/1294266.png'); background-size: cover;</h3> -->
+            <span class="navbar-brand mb-0 h4">Hello {{fname}}!Welcome to Nithin's World!</span>
+            <button class="badge rounded-pill bg-light fs-3 " type="submit"><a href="signout"
+                    style="text-decoration: none;">SignOut</a></button>
+        </div>
+    </nav>
+    <div class="main">
+
+    </div>
+
+
+
+    <!-- <div
+        style="height: 970px ; background-image: url('https://wallpaperaccess.com/full/1294266.png'); background-size: cover;">
+
+        <div class="row" style="width: 100%;">
+            <div class="col-md-6 pe-0">
+               
+            </div>
+            <div class="col-md-6 ps-0">
+               
+
+            </div>
+        </div>
+        <div class="row p-0" style="width: 100%;">
+            <div class="col-md-6 text-center">
+                <h1>PYTHON</h1>
+                <p class="lead">
+                    Python For Beginners
+                    Welcome! Are you completely new to programming? If not then we presume you will be looking for
+                    information about
+                    why and how to get started with Python. Fortunately an experienced programmer in any programming
+                    language
+                    (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn,
+                    so jump in!
+
+                    Installing
+                    Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent
+                    Python.
+                    Even some Windows computers (notably those from HP) now come with Python already installed. If you
+                    do need to
+                    install Python and aren't confident about the task you can find a few notes on the
+                    BeginnersGuide/Download wiki
+                    page, but installation is unremarkable on most platforms.
+
+
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-light">
+                <h1>DJANGO</h1>
+                <p>What is the Django used for?
+                    Django is a high-level Python web framework that enables rapid development of secure and
+                    maintainable websites.
+                    Built by experienced developers, Django takes care of much of the hassle of web development,
+                    so you can focus on writing your app without needing to reinvent the wheel.</p>
+
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

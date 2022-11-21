@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <h1>HAI GUYS</h1>
+    <div class="container-fluid text-center">
+        {% for b in bike %}
+    
+        <!-- <div class="card text-center mx-3 my-3" style="width: 350px; height: 380px; display:inline-block"> -->
+            <!-- <img src="{{b.doc_image.url}}" class="card-img-top" alt="..."> -->
+            <!-- <div class="card-body"> -->
+             
+                <!-- <h6>{{b.bike_name}} Department</h6> -->
+            <!-- </div>
+        </div> -->
+        <!-- <h5 class="card-title">{{b.bike_name}}</h5>
+        <p class="card-text">{{b.bike_spec}}</p> -->
+        <div class="card text-center mx-3 my-3" style="width: 350px; height: 380px; display:inline-block;  border:2px solid gray;">
+            <img src="{{b.bike_image.url}}" class="card-img-top" alt="...">
+            <div class="card-body bg-success">
+                <h5 class="card-title">{{b.bike_name}}</h5>
+                <p class="card-text">{{b.bike_decription}}</p>
+                <!-- <h6>{{d.dep_name}} Department</h6> -->
+            </div>
+        </div>
+        
+        {% endfor %}
+    </div>
+
+</body>
+</html>
